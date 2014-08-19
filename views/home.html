@@ -1,11 +1,9 @@
 <section class="abstract">
-  <article><%= render_markdown('intro') %></article>
-  <article><%= render_markdown('background') %></article>
-  <article><%= render_markdown('who') %></article>
+  <article btf-markdown ng-include="'content/intro.md'"></article>
+  <article btf-markdown ng-include="'content/background.md'"></article>
+  <article btf-markdown ng-include="'content/who.md'"></article>
 </section>
 
 <section class="concrete">
-  <article><%= render_markdown('toc') %><article>
+  <article btf-markdown ng-include="'content_zh-CN/toc.md'"><article>
 </section>
-
-

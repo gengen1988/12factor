@@ -1,12 +1,12 @@
-<section class="abstract" id="factor">
-  <article>
+<section ng-controller="markdown" class="abstract" id="factor">
+  <article btf-markdown ng-include="factor">
     <%= render_markdown(@factor) %>
   </article>
 </section>
 
-<section class="concrete">
+<section ng-controller="page" class="concrete">
   <nav>
-    <div id="prev"><%= render_prev(@factor) %></div>
-    <div id="next"><%= render_next(@factor) %></div>
+    <div id="prev" ng-hide="index == 0"><a href="{{prev}}">&laquo; Previous</a></div>
+    <div id="next" ng-hide="index == size - 1"><a href="{{next}}">Next &raquo;</a></div>
   </nav>
 </section>

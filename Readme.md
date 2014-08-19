@@ -1,4 +1,4 @@
-The Twelve-Factor App
+The Twelve-Factor App (Angular.js Edition)
 =====================
 
 Source for the content app running at: http://www.12factor.net/
@@ -28,4 +28,3 @@ Ward, Adam Seligman, Phil Hagelberg, Jon Mountjoy, Matthew Turland, Daniel
 Jomphe, Mattt Thompson, Anand Narasimhan, Lucas Fais, Pete Hodgson
 
 Released under the MIT License: http://www.opensource.org/licenses/mit-license.php
-
