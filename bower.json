@@ -1,0 +1,19 @@
+{
+  "name": "12factor",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gengen1988/12factor",
+  "authors": [
+    "Gen Liu <gerald_721@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.2.22"
+  }
+}
