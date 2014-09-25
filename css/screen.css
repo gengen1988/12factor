@@ -9,7 +9,7 @@ body {
 h1, h2, h3 {
   padding: 0;
   margin: 0;
-}  
+}
 
 h1, h2 {
   line-height: 1.25em;
@@ -52,7 +52,7 @@ article {
 
 article, nav {
   margin: 0 auto;
-  text-align: justify;
+  text-align: left;
 }
 
 article p a, article li a {
