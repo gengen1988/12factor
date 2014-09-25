@@ -7,8 +7,8 @@
 
 本地环境中，开发人员通过类似 `http://localhost:5000/` 的地址来访问服务。在线上环境中，请求统一发送至公共域名而后路由至绑定了端口的网络进程。
 
-通常的实现思路是，将网络服务器类库通过 [依赖声明](/dependencies) 载入应用。例如，Python的[Tornado](http://www.tornadoweb.org/), Ruby的[Thin](http://code.macournoyer.com/thin/) , Java以及其他基于JVM语言的 [Jetty](http://jetty.codehaus.org/jetty/) 。完全由 *用户端* ，确切的说应该是应用的代码，发起请求。和运行环境约定好绑定的端口即可处理这些请求。
+通常的实现思路是，将网络服务器类库通过 [依赖声明](#!/dependencies) 载入应用。例如，Python的[Tornado](http://www.tornadoweb.org/), Ruby的[Thin](http://code.macournoyer.com/thin/) , Java以及其他基于JVM语言的 [Jetty](http://jetty.codehaus.org/jetty/) 。完全由 *用户端* ，确切的说应该是应用的代码，发起请求。和运行环境约定好绑定的端口即可处理这些请求。
 
 HTTP并不是唯一一个可以由端口绑定提供的服务。其实几乎所有服务器软件都可以通过进程绑定端口来等待请求。例如，使用 [XMPP](http://xmpp.org/) 的 [ejabberd](http://www.ejabberd.im/)  ， 以及使用 [Redis协议](http://redis.io/topics/protocol) 的 [Redis](http://redis.io/) 。
 
-还要指出的是，端口绑定这种方式也意味着一个应用可以成为另外一个应用的 [后端服务](/backing-services) ，调用方将服务方提供的相应URL当作资源存入 [配置](/config) 以备将来调用。
+还要指出的是，端口绑定这种方式也意味着一个应用可以成为另外一个应用的 [后端服务](#!/backing-services) ，调用方将服务方提供的相应URL当作资源存入 [配置](#!/config) 以备将来调用。
